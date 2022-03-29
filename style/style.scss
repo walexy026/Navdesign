@@ -1,0 +1,41 @@
+@import './reset';
+@import './color';
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    background-color: $btn;
+
+    ul{
+            display: flex;
+            list-style: none;
+            gap: 5vw;
+            text-align: center;
+            padding-top: 2vh;
+    }
+    fa{
+        //  display: none;
+    padding-top: 2vh;
+
+     }
+    button{
+       background-color: aqua;
+       border-radius: 5px;
+       padding: 2px 5px;
+       &:hover{
+           background-color: beige;
+           color: brown;
+           pointer-events: visible;
+           cursor: pointer;
+
+        
+       }
+    }
+}
+@media screen and(min-width:780px) {
+    .fa{
+        display: inline;
+    }
+    
+}
