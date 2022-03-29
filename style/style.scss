@@ -10,14 +10,11 @@ nav {
 
     .bolt {
         img {
-            // display: none;
             padding-top: 2vh;
-            // width: 50px;
             border-radius: 50%;
             padding-top: 2vh;
             padding-bottom: 2vh;
             width: 50px;
-            // position: fixed;
         }
     }
 
@@ -28,26 +25,32 @@ nav {
         gap: 5vw;
         text-align: center;
         padding-top: 3vh;
-        
+
+        #btn2.btn{
+            display: none;
+            @media screen and(max-width:780px){
+                display: flex;
+            }
+
+        }
 
         @media screen and(max-width:780px) {
             display: block;
             position: absolute;
-    background-color: rgb(124, 20, 124);
-    color: white;
-    top: 67px;
-    left: -200vh;
-    &.show{
-        display: flex;
-        flex-direction: column;
-            position: relative;
-    background-color: rgb(100, 19, 107);
-    min-height: 300px;
-    color: white;
-    top: 49px;
-    left: -125px;
-    }
-
+            background-color: rgb(124, 20, 124);
+            color: white;
+            top: 67px;
+            left: -200vh;
+            &.show {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+                background-color: rgb(100, 19, 107);
+                min-height: 500px;
+                color: white;
+                top: 49px;
+                left: -125px;
+            }
         }
     }
     .btn1 {
@@ -70,11 +73,10 @@ nav {
         }
     }
     .fa {
-        // display: none;
-        // width: 100px;
-        padding-top: 3vh;
+        padding-top: 2vh;
         color: aliceblue;
-        
+        font-size: 30px;
+
         @media screen and(min-width:780px) {
             display: none;
         }
