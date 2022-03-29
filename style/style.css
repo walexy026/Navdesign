@@ -11,43 +11,91 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-item-align: center;
       align-self: center;
-  background-color: blue;
+  background-color: #64136b;
+  padding: 10px;
 }
 
-nav ul {
+nav .bolt img {
+  padding-top: 2vh;
+  border-radius: 50%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 50px;
+}
+
+nav .navBar {
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
   gap: 5vw;
   text-align: center;
-  padding-top: 2vh;
+  padding-top: 3vh;
 }
 
-nav fa {
-  padding-top: 2vh;
+@media screen and (max-width: 780px) {
+  nav .navBar {
+    display: block;
+    position: absolute;
+    background-color: #7c147c;
+    color: white;
+    top: 67px;
+    left: -200vh;
+  }
+  nav .navBar.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    background-color: #64136b;
+    min-height: 300px;
+    color: white;
+    top: 49px;
+    left: -125px;
+  }
 }
 
-nav button {
-  background-color: aqua;
-  border-radius: 5px;
-  padding: 2px 5px;
+nav .btn1 {
+  background-color: black;
+  border-radius: 50px;
+  color: aliceblue;
+  height: 45px;
+  margin-top: 5px;
+  font-size: 14px;
+  padding: 10px;
 }
 
-nav button:hover {
+@media screen and (max-width: 780px) {
+  nav .btn1 {
+    display: none;
+  }
+}
+
+nav .btn1:hover {
   background-color: beige;
   color: brown;
   pointer-events: visible;
   cursor: pointer;
 }
 
+nav .fa {
+  padding-top: 3vh;
+  color: aliceblue;
+}
+
 @media screen and (min-width: 780px) {
-  .fa {
-    display: inline;
+  nav .fa {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

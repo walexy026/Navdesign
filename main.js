@@ -1,4 +1,4 @@
-function myFunction() {
+/* function myFunction() {
     var x = document.getElementById("navbar");
     var i = document.getElementById("ba")
     
@@ -12,4 +12,10 @@ function myFunction() {
       i.classList.remove("fa-times")
     i.classList.add("fa-bars")
     }
+  }
+  */
+
+  document.getElementById('hamburger').onclick = function() {
+      document.getElementById("hamburger").classList.toggle("fa-times")
+      document.getElementById('nav').classList.toggle("show")
   }

@@ -1,41 +1,82 @@
-@import './reset';
-@import './color';
+@import "./reset";
+@import "./color";
 
-nav{
+nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-self: center;
-    background-color: $btn;
+    background-color: rgb(100, 19, 107);
+    padding: 10px;
 
-    ul{
-            display: flex;
-            list-style: none;
-            gap: 5vw;
-            text-align: center;
+    .bolt {
+        img {
+            // display: none;
             padding-top: 2vh;
+            // width: 50px;
+            border-radius: 50%;
+            padding-top: 2vh;
+            padding-bottom: 2vh;
+            width: 50px;
+            // position: fixed;
+        }
     }
-    fa{
-        //  display: none;
-    padding-top: 2vh;
 
-     }
-    button{
-       background-color: aqua;
-       border-radius: 5px;
-       padding: 2px 5px;
-       &:hover{
-           background-color: beige;
-           color: brown;
-           pointer-events: visible;
-           cursor: pointer;
-
+    .navBar {
+        color: white;
+        display: flex;
+        list-style: none;
+        gap: 5vw;
+        text-align: center;
+        padding-top: 3vh;
         
-       }
+
+        @media screen and(max-width:780px) {
+            display: block;
+            position: absolute;
+    background-color: rgb(124, 20, 124);
+    color: white;
+    top: 67px;
+    left: -200vh;
+    &.show{
+        display: flex;
+        flex-direction: column;
+            position: relative;
+    background-color: rgb(100, 19, 107);
+    min-height: 300px;
+    color: white;
+    top: 49px;
+    left: -125px;
     }
-}
-@media screen and(min-width:780px) {
-    .fa{
-        display: inline;
+
+        }
     }
-    
+    .btn1 {
+        background-color: black;
+        border-radius: 50px;
+        color: aliceblue;
+        height: 45px;
+        margin-top: 5px;
+        font-size: 14px;
+        padding: 10px;
+
+        @media screen and(max-width:780px) {
+            display: none;
+        }
+        &:hover {
+            background-color: beige;
+            color: brown;
+            pointer-events: visible;
+            cursor: pointer;
+        }
+    }
+    .fa {
+        // display: none;
+        // width: 100px;
+        padding-top: 3vh;
+        color: aliceblue;
+        
+        @media screen and(min-width:780px) {
+            display: none;
+        }
+    }
 }
