@@ -35,8 +35,8 @@ nav .navBar {
   display: flex;
   list-style: none;
   gap: 5vw;
-  text-align: center;
-  padding-top: 3vh;
+  text-align: left;
+  padding-top: 2vh;
 }
 
 nav .navBar #btn2.btn {
@@ -69,8 +69,8 @@ nav .navBar #btn2.btn {
         -ms-flex-direction: column;
             flex-direction: column;
     position: relative;
-    background-color: #64136b;
-    min-height: 500px;
+    background-color: transparent;
+    min-height: 400px;
     color: white;
     top: 49px;
     left: -125px;

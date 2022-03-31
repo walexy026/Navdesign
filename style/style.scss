@@ -23,8 +23,8 @@ nav {
         display: flex;
         list-style: none;
         gap: 5vw;
-        text-align: center;
-        padding-top: 3vh;
+        text-align: left;
+        padding-top: 2vh;
 
         #btn2.btn{
             display: none;
@@ -45,8 +45,8 @@ nav {
                 display: flex;
                 flex-direction: column;
                 position: relative;
-                background-color: rgb(100, 19, 107);
-                min-height: 500px;
+                background-color: transparent;
+                min-height: 400px;
                 color: white;
                 top: 49px;
                 left: -125px;
